@@ -1,0 +1,11 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 992px) {
+    .mainBox{
+        display: flex;
+        flex-direction: column;
+        gap: 70px!important;
+    }
+}

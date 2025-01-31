@@ -1,0 +1,234 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://unicons.iconscout.com/release/v4.0.8/css/line.css");
+@import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+:root {
+  /*========== Colors ==========*/
+  --head-color: #5fef45;
+  --white-color: #fff;
+
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+}
+/*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font)!important;
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+.section{
+  padding: 80px 0;
+}
+
+.section-bottom{
+  padding-bottom: 80px;
+}
+
+.center-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-c{
+  text-decoration: none;
+}
+
+/*--------------- Auth--------------- */
+.log-button{
+  font-weight: bold;
+  color: #fff;
+}
+/*------------- Navbar--------------- */
+.css-s242ks-MuiButtonBase-root-MuiButton-root{
+  text-transform:initial!important;
+}
+
+.container{
+  width: 90%!important;
+}
+
+.head-tool{
+  justify-content: space-between;
+  padding: 0px!important;
+}
+
+.head-tool button{
+  text-transform: initial;
+}
+
+.no-underline{
+  text-decoration: none;
+}
+
+input:-internal-autofill-selected {
+background-color: black!important;
+}
+
+input,
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white;
+    color: white !important;
+}
+
+/* -webkit-box-shadow: 0 0 50px rgba(255, 255, 255, 0) inset !important;
+background-color: #000 !important;
+background-clip: text;
+color: #fff!important; */
+
+
+/* input:-webkit-autofill { 
+  -webkit-background-clip: content-box;
+  color: #fff;
+} */
+
+
+
+/*--------------- Home --------------- */
+.home-sec{
+  position: relative;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./Images/home-video.gif);
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  color: #fff;
+}
+
+.home-icons .fav-i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.third-sec{
+  position: relative;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./Images/home1-video.gif);
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  color: #fff;
+}
+
+.arrows{
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  background-color: var(--head-color);
+  color: var(--white-color);
+  font-size: 2.5rem;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.customer-reviews-slider .slick-slide {
+  padding: 0 20px;
+}
+
+
+
+
+
+/*------------- Products-description --------------*/
+.prod-header, .cart-header, .service-header, .dealers-header{
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./Images/product-1.png);
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.css-zsp0bh-MuiInputBase-root-MuiOutlinedInput-root{
+  color: #fff!important;
+}
+
+
+
+
+
+/*------------- Loader --------------*/
+.ring {
+  background: #fff;
+  color: white;
+  --f: 1;
+  width: 5em;
+  height: 5em;
+  transform: scale(var(--f));
+  opacity: var(--f);
+  background: radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.1) calc((10% - 2px)), transparent calc((10% - 1px))), radial-gradient(circle at 50% 10%, black calc((10% - 2px)), transparent calc((10% - 1px))), radial-gradient(circle at 80% 20%, rgba(0, 0, 0, 0.1) calc((10% - 2px)), transparent calc((10% - 1px))), radial-gradient(circle at 90%, black calc((10% - 2px)), transparent calc((10% - 1px))), radial-gradient(circle at 80% 80%, rgba(0, 0, 0, 0.1) calc((10% - 2px)), transparent calc((10% - 1px))), radial-gradient(circle at 50% 90%, black calc((10% - 2px)), transparent calc((10% - 1px))), radial-gradient(circle at 20% 80%, rgba(0, 0, 0, 0.1) calc((10% - 2px)), transparent calc((10% - 1px))), radial-gradient(circle at 10%, black calc((10% - 2px)), transparent calc((10% - 1px)));
+  animation: rotation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+}
+.ring > .ring {
+  --f: 0.6;
+}
+
+@keyframes rotation {
+  to {
+    transform: scale(var(--f)) rotate(1turn);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .css-12pwiy3-MuiContainer-root{
+    width: 100%!important;
+  }
+  .home-sec{
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-sec{
+    height: 100vh;
+  }
+  .home-icons{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home-icons .fav-i{
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .home-sec{
+    height: 100vh;
+  }
+}
